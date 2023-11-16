@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <Navbar className='header' collapseOnSelect expand='lg'>
+      <Navbar sticky='top' className='header' collapseOnSelect expand='lg'>
         <Container>
           <Navbar.Brand className='navbar-brand m-4 ms-0' href='#home'>
             EKR | DEV PORTFOLIO
