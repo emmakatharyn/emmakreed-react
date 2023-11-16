@@ -41,7 +41,12 @@ body.dark {
 body.dark #hero {
   height: 100vh;
   min-height: 64rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(2, 2, 127, 0.349)), url("../public/images/mike-lewinski-iURMH0Lrz8Y-unsplash.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85),
+      rgba(2, 2, 127, 0.349)
+    ),
+    url("../public/images/mike-lewinski-iURMH0Lrz8Y-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -73,13 +78,13 @@ section {
 
 /* nav styles */
 .header {
+  font-size: 1.6rem;
   background-color: #e0dfe1be;
-  width: 100%;
-  height: 8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
   padding: 0 2.8rem;
+  text-transform: uppercase;
 }
 
 /* header dark */
@@ -96,8 +101,9 @@ a.header-link-home:link,
 a.header-link-home:visited,
 .main-nav-list li a:link,
 .main-nav-list li a:visited {
-  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 24px;
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  /* font-size: 24px; */
   text-decoration: none;
 }
 
@@ -174,7 +180,12 @@ button#colorToggle {
   position: relative;
   height: 100vh;
   min-height: 64rem;
-  background-image: linear-gradient(to bottom, rgba(232, 231, 239, 0.651), rgba(206, 199, 222, 0.486)), url(../public/images/ian-dooley-cWbxvQq4irc-unsplash.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(232, 231, 239, 0.651),
+      rgba(206, 199, 222, 0.486)
+    ),
+    url(../public/images/ian-dooley-cWbxvQq4irc-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -198,7 +209,8 @@ button#colorToggle {
   color: #ff008c;
   display: inline-block;
   font-size: 9.6rem;
-  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   font-weight: 700;
   /* word-spacing: -1.6rem; */
 }
@@ -228,7 +240,8 @@ button#colorToggle {
 
 .btn.hero-btn:link,
 .btn.hero-btn:visited {
-  font-family: "Bebas Nueue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Bebas Nueue", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   font-size: 3.2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -286,7 +299,11 @@ button#colorToggle {
   padding: 0.8rem;
   width: 100%;
   height: 18rem;
-  background-image: linear-gradient(to right bottom, rgba(27, 10, 36, 0.621), rgba(31, 1, 38, 0.57)),
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(27, 10, 36, 0.621),
+      rgba(31, 1, 38, 0.57)
+    ),
     url("https://images.unsplash.com/photo-1566837945700-30057527ade0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-size: cover;
   background-position: center;
@@ -389,7 +406,8 @@ button#colorToggle {
 }
 
 button.btn.portal {
-  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Bebas Neue", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
   font-size: 2.4rem;
   background-color: #ff008c;
   color: #fff;
