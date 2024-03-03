@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Contact() {
   return (
     <section id='contact'>
@@ -5,41 +7,29 @@ function Contact() {
       <div className='flex-container'>
         <div className='blurb'>
           <p className='contact-blurb'>Let's build something cool.</p>
-          <button id='contactBtn' className='btn portal'>
-            Contact
-          </button>
-          <div className='captcha-box'>
-            <p id='bot-msg'>
-              If you would like my contact info,
-              <br />
-              please prove you're not a bot by finishing Kip's iconic lyrics:
-            </p>
-            <p id='iLuvTech'>🎶Yes, I love ________</p>
 
-            <div id='hidden'></div>
-          </div>
-          <a className='email' href='mailto:emmakatharyn@gmail.com'>
-            ✨ emmakatharyn@gmail.com ✨
-          </a>
+          <Link className='email' to='mailto:emmakatharyn@gmail.com'>
+            ✨ emmakatharyn@gmail.com
+          </Link>
           <div className='social-media-box'>
-            <a href='https://github.com/ereed-erisa'>
+            <Link to='https://github.com/emmakatharyn'>
               <ion-icon
                 className='social-media-icon'
                 name='logo-github'
               ></ion-icon>
-            </a>
-            <a href='https://codepen.io/emmakreed'>
+            </Link>
+            <Link to='https://codepen.io/emmakreed'>
               <ion-icon
                 className='social-media-icon'
                 name='logo-codepen'
               ></ion-icon>
-            </a>
-            <a href='https://www.instagram.com/emmakatharyn/'>
+            </Link>
+            <Link to='https://www.instagram.com/emmakatharyn/'>
               <ion-icon
                 className='social-media-icon'
                 name='logo-instagram'
               ></ion-icon>
-            </a>
+            </Link>
           </div>
         </div>
 

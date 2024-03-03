@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section id='hero'>
       <div className='hero-flex'>
         <h1>Emma Reed</h1>
         <p className='hero-paragraph'>
-          Self-taught web developer based in Santa Fe, NM
+          Front-end web developer based in Santa Fe, NM
         </p>
         <div className='btn-flexbox'>
-          <a className='btn hero-btn' href='#projects'>
+          <Link className='btn hero-btn' to='/projects'>
             Projects
-          </a>
-          <a className='btn hero-btn' href='#contact'>
+          </Link>
+          <Link className='btn hero-btn' to='/contact'>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </section>

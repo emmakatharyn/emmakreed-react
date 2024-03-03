@@ -6,8 +6,9 @@ function About() {
       <div className='flex-container'>
         <img
           className='about-headshot'
-          src='/images/headshot_2.JPEG'
-          alt='Headshot of Emma'
+          src='/images/emlasvegas.jpeg'
+          alt='Headshot of Emma ca. 1997'
+          title='welcome to my corner of the internet'
         />
         <div className='text-side'>
           <p className='blurb'>
@@ -15,10 +16,10 @@ function About() {
             front-end web development during the COVID pandemic.
           </p>
           <p className='blurb'>
-            In Spring 2016, Emma received a Bachelor of Arts in music with a
-            minor emphasis in Chinese language and culture studies. She
-            bartended and painted watercolors for some years after graduating
-            from LSU and moving back to the Houston area.
+            In Spring 2016, Emma completed a Bachelor of Arts in music with a
+            minor in Chinese language and culture studies. She bartended and
+            painted watercolors for some years after graduating from LSU and
+            moving back to the Houston area.
           </p>
           <p className='blurb'>
             Early spring of 2020, Emma moved to Santa Fe and was a bartender at

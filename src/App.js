@@ -4,16 +4,17 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  Outlet,
 } from "react-router-dom";
 import "./App.css";
 
-import Header from "./components/Header";
+import Root from "./components/Root";
+
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { DarkModeProvider } from "./contexts/DarkModeContext";
+
 // import ArtStuff from "./components/ArtStuff";
 
 const router = createBrowserRouter(
@@ -29,18 +30,10 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />;
-}
-
-function Root() {
   return (
-    <>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </>
+    <DarkModeProvider>
+      <RouterProvider router={router} />
+    </DarkModeProvider>
   );
 }
 

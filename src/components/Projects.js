@@ -1,87 +1,82 @@
+import { Link } from "react-router-dom";
+
 export default function ProjectsSection() {
   return (
     <section id='projects'>
       <h2>Recent Projects</h2>
       <div className='container'>
         <div className='project'>
-          <a
+          <Link
             className='project-img-link'
-            href={"https://www.sugarandryegalveston.com"}
+            to='https://preeminent-faun-dcfab7.netlify.app/'
+            target='_blank'
           >
             <div className='project-img'>
-              <h3>Sugar &amp; Rye Galveston</h3>
+              <h3>SoNM Group Benefits</h3>
             </div>
-          </a>
+          </Link>
 
           <p className='project-description'>
-            Built in pure HTML, CSS, and JavaScript, this was the initial
-            website for Sugar & Rye Coastal Kitchen & Cocktail Lounge in
-            Galveston, TX during their first few years of business. This site is
-            mobile responsive and search engine optimized with a custom menu
-            component.
+            WIP; turning the static HTML site into a React app.
           </p>
         </div>
 
         <div className='project'>
-          <a
+          <Link
             className='project-img-link'
-            href='https://codesandbox.io/s/suspicious-williamson-dxsmk9?file=/src/index.js'
+            to='https://emmakatharyn.github.io/pack-n-go-app/'
+            target='_blank'
           >
             <div className='project-img'>
-              <h3>Dev Card Built with React</h3>
+              <h3>Pack-N-Go React App</h3>
             </div>
-          </a>
+          </Link>
 
           <p className='project-description'>
-            I am currently working through a few courses on React.js through
-            Udemy and Codecademy. This is my first little build in Code Sandbox
-            - a developer card with an avatar, name, description, and listed
-            skills.
+            A packing list for travel that accepts user input items and appends
+            them to the page with an option to check complete or delete.
           </p>
         </div>
 
         <div className='project'>
-          <a
+          <Link
             className='project-img-link'
-            href='https://ereed-erisa.github.io/guess-my-number/'
+            to='https://github.com/emmakatharyn/jammming'
+            target='_blank'
           >
             <div className='project-img'>
-              <h3>Guess My Number</h3>
+              <h3>Jammming React App (Repo)</h3>
             </div>
-          </a>
+          </Link>
           <p className='project-description'>
-            A simple game written in HTML, CSS, & JavaScript where there is a
-            mystery number between 1 and 20. User starts with a score of 20.
-            Each wrong guess docks 1 point from this score. Check it out and try
-            to beat your highscore! 👀
+            A React app that uses the Spotify API for a playlist building app.
+            User can search for songs/artists and create custom playlists.
           </p>
         </div>
 
         <div className='project'>
-          <a
+          <Link
             className='project-img-link'
-            href='https://ereed-erisa.github.io/pig-dice-game/'
+            to='https://emmakatharyn.github.io/to-do-list/'
+            target='_blank'
           >
             <div className='project-img'>
-              <h3>A Basic Dice Game</h3>
+              <h3>ToDo List</h3>
             </div>
-          </a>
+          </Link>
           <p className='project-description'>
-            A project as part of Jonas Schmedtmann's JavaScript course, this
-            simple two-player dice game is written in HTML, CSS, and JavaScript.
+            WIP; a to-do list written in React. Accepts user input and adds to
+            the list unchecked. User may edit or remove list items, as well as
+            toggle dark/light theme.
           </p>
         </div>
       </div>
-      <p
-        style={{
-          fontSize: "16px",
-          textAlign: "center",
-          width: "420px",
-          margin: "0 auto",
-        }}
-      >
-        Check out my <a href='https://github.com/ereed-erisa/'>GitHub</a> for
-        more projects!
+      <p class='github-link'>
+        Check out my{" "}
+        <Link to='https://github.com/emmakatharyn' target='_blank'>
+          GitHub
+        </Link>{" "}
+        for more projects!
       </p>
     </section>
   );

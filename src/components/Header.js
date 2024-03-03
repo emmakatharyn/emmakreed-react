@@ -1,31 +1,37 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import { useDarkMode } from "../contexts/DarkModeContext";
 
 function Header() {
+  const { darkMode, toggleDarkMode } = useDarkMode();
   return (
     <header className='header'>
-      <a className='header-link-home' href='index.html'>
+      <Link className='header-link-home' to='home'>
         EKR | Dev Portfolio
-      </a>
+      </Link>
 
       <nav className='main-nav'>
         <ul className='main-nav-list'>
-          <button id='colorToggle'>
-            <ion-icon className='color-theme-icon' name='moon'></ion-icon>
+          <button id='colorToggle' onClick={toggleDarkMode}>
+            <ion-icon
+              className='color-theme-icon'
+              name={darkMode ? "sunny" : "moon"}
+            ></ion-icon>
           </button>
           <li>
-            <a href='#about' className='main-nav-link'>
+            <NavLink to='about' className='main-nav-link'>
               About
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href='#projects' className='main-nav-link'>
+            <NavLink to='projects' className='main-nav-link'>
               Work
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href='#contact' className='main-nav-link'>
+            <NavLink to='contact' className='main-nav-link'>
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
