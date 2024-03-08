@@ -16,7 +16,11 @@ function Header() {
     <header className={isNavOpen ? "header nav-open" : "header"}>
       <Brand />
       <Nav setIsNavOpen={setIsNavOpen} />
-      <Hamburger handleNavOpen={handleNavOpen} setIsNavOpen={setIsNavOpen} />
+      <Hamburger
+        isNavOpen={isNavOpen}
+        handleNavOpen={handleNavOpen}
+        setIsNavOpen={setIsNavOpen}
+      />
     </header>
   );
 }
